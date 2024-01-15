@@ -1,10 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/oncallchef", {
-    // useCreateIndex: true,
-    // useNewUrlParser: true,
-    // useUnifiedTopology: true,
-}).then(() => {
+mongoose.connect("mongodb+srv://umerkhalid054:iOMAEGPvhd9P1rtM@cluster0.vrp6bv1.mongodb.net/oncallchef?retryWrites=true&w=majority").then(() => {
     console.log("connection is successful");
 }).catch((e) => {
     console.log(e, "No connection");
